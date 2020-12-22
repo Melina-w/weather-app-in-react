@@ -16,7 +16,8 @@ export default function CurrentWeather() {
           <div className="col-6 current-degree">
             <img
               src="http://openweathermap.org/img/wn/04d@2x.png"
-              className="weather-icon"
+              alt="current-weather-icon"
+              lassName="weather-icon"
               id="current-weather-icon"
             />
             <TemperatureUpdate />

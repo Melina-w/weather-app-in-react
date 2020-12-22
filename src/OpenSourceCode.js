@@ -6,6 +6,7 @@ export default function OpenSourceCode() {
       <a
         href="https://github.com/Melina-w/my-weather-app-project"
         target="_blank"
+        rel="noreferrer"
       >
         Open Source Code.
       </a>
