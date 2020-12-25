@@ -3,48 +3,51 @@ import React from "react";
 import "./styles.css";
 import Search from "./Search";
 import CurrentWeather from "./CurrentWeather";
-import WeatherForecastDay from "./WeatherForecastDay";
 import OpenSourceCode from "./OpenSourceCode";
+import DailyForecastData from "./DailyForecastData";
 
 function App() {
+  let Data = [
+    {
+      day: "Wednesday",
+      tempMin: "19",
+      tempMax: "20",
+      description: "Overcast Clouds",
+    },
+    {
+      day: "Thursday",
+      tempMin: "17",
+      tempMax: "22",
+      description: "Overcast Clouds",
+    },
+    {
+      day: "Friday",
+      tempMin: "18",
+      tempMax: "22",
+      description: "Overcast Clouds",
+    },
+    {
+      day: "Saturday",
+      tempMin: "15",
+      tempMax: "25",
+      description: "Overcast Clouds",
+    },
+    {
+      day: "Sunday",
+      tempMin: "11",
+      tempMax: "30",
+      description: "Sunny",
+    },
+  ];
   return (
     <div className="App">
       <div className="container weather-box">
         <Search />
       </div>
       <CurrentWeather />
-      <div className="container days-forecast">
-        <WeatherForecastDay
-          day="Wednesday"
-          tempMin="19"
-          tempMax="20"
-          description="Overcast Clouds"
-        />
-        <WeatherForecastDay
-          day="Thursday"
-          tempMin="19"
-          tempMax="20"
-          description="Overcast Clouds"
-        />
-        <WeatherForecastDay
-          day="Friday"
-          tempMin="19"
-          tempMax="20"
-          description="Overcast Clouds"
-        />
-        <WeatherForecastDay
-          day="Saturday"
-          tempMin="19"
-          tempMax="20"
-          description="Overcast Clouds"
-        />
-        <WeatherForecastDay
-          day="Sunday"
-          tempMin="19"
-          tempMax="20"
-          description="Overcast Clouds"
-        />
-      </div>
+
+      <DailyForecastData Data={Data} />
+
       <OpenSourceCode />
     </div>
   );
