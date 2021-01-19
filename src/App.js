@@ -47,7 +47,7 @@ function App() {
       <CurrentWeather />
 
       <DailyForecastData Data={Data} />
-
+<
       <OpenSourceCode />
     </div>
   );
